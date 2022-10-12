@@ -12,7 +12,7 @@ app
   .use(bodyparser.json());
 
   sequelize.initDb()
-  app.get('/',(_req,res) => {
+  app.get('./',(_req,res) => {
     res.json('hello,heroku')
   })
 
